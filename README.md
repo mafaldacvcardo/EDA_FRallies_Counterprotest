@@ -1,12 +1,8 @@
 # EXPLORATORY DATA ANALYSIS
 
-**FAR RIGHT RALLIES AND COUNTERPROTEST AS RESISTANCE: CLAIMING THE STREET**
-
-# **FARPE Data Analysis**
+# **FARPE DATA ANALYSIS: FAR RIGHT RALLIES AND COUNTERPROTEST AS RESISTANCE: CLAIMING THE STREET**
 
 Analysis of far-right mobilization patterns across Europe using the **FARPE (Far-Right Protests in Europe)** dataset.
-
----
 
 ## **Overview**
 
@@ -18,8 +14,6 @@ The project investigates:
 * Geographical concentration
 * Temporal shifts in issue salience
 * Relationships between protest forms, violence, and counter-protest
-
----
 
 ## **Dataset**
 
@@ -41,7 +35,6 @@ Castelli Gattinara Pietro, Froio Caterina, & Pirro Andrea (2022).
 **European Journal of Political Research, 61(4), 1019–1041.**
 [https://doi.org/10.1111/1475-6765.12484](https://doi.org/10.1111/1475-6765.12484)
 
----
 
 ## 🧩 **Dependencies**
 
@@ -57,11 +50,7 @@ seaborn
 
 Install via pip:
 
-```bash
 pip install pandas numpy matplotlib seaborn
-```
-
----
 
 ## **Analysis Structure**
 
@@ -76,7 +65,6 @@ pip install pandas numpy matplotlib seaborn
   * Protest form
 * Removes rows with missing essential variables
 
----
 
 ### **2. Hypothesis 1 — Counter-Mobilization by Issue**
 
@@ -86,7 +74,6 @@ pip install pandas numpy matplotlib seaborn
 * Filters out issue categories with fewer than 30 events
 * Produces a bar plot showing counter-mobilization proportions
 
----
 
 ### **3. Hypothesis 2 — Verbal Counter-Mobilization by Event Level**
 
@@ -96,8 +83,6 @@ pip install pandas numpy matplotlib seaborn
   **Local**, **National**, **Supranational**
 * Examines rates of *verbal* counter-mobilization
 * Displays results using a pie chart
-
----
 
 ### **4. Hypothesis 3 — Violence and Counter-Mobilization**
 
@@ -110,8 +95,6 @@ pip install pandas numpy matplotlib seaborn
   * No counter-mobilization
 * Visualizes results with a bar plot
 
----
-
 ### **5. Hypothesis 4 — Identity-Related Issues Over Time**
 
 **Question:** *Have Islam/Immigration/Identity issues increased since 2014?*
@@ -119,8 +102,6 @@ pip install pandas numpy matplotlib seaborn
 * Tracks issue salience over time
 * Compares pre-2014 vs. post-2014 periods
 * Uses a stacked bar chart to show temporal shifts
-
----
 
 ### **6. Hypothesis 5 — Geographic Distribution**
 
@@ -131,8 +112,6 @@ pip install pandas numpy matplotlib seaborn
 * Calculates concentration share of the top 5
   (e.g., percentage of all protests occurring in these countries)
 
----
-
 ### **7. Hypothesis 6 — Welfare/Economic Issues Over Time**
 
 **Question:** *How has the emphasis on welfare/economic issues evolved?*
@@ -140,8 +119,6 @@ pip install pandas numpy matplotlib seaborn
 * Tracks welfare/economic issue mentions by year
 * Highlights the **2012–2014 crisis period**
 * Identifies peak mobilization year for welfare-related protests
-
----
 
 ## **Running the Analysis**
 
@@ -158,8 +135,6 @@ The script will automatically generate:
 * Statistical summaries (printed to console)
 * Visualizations (bar charts, pie chart, stacked bars, line trends)
 
----
-
 ## **Output**
 
 The analysis produces:
@@ -168,8 +143,6 @@ The analysis produces:
 * Multiple visualizations
 * Key findings for each hypothesis
 * Highlights on temporal, spatial, and issue-based trends
-
----
 
 ## **Notes**
 
