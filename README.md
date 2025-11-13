@@ -36,7 +36,7 @@ Castelli Gattinara Pietro, Froio Caterina, & Pirro Andrea (2022).
 [https://doi.org/10.1111/1475-6765.12484](https://doi.org/10.1111/1475-6765.12484)
 
 
-## 🧩 **Dependencies**
+## **Dependencies**
 
 Required packages:
 
