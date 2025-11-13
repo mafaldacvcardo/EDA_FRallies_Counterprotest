@@ -1,87 +1,180 @@
 # EXPLORATORY DATA ANALYSIS
 
-FARPE Data Analysis
-This repository contains a Python script for analyzing far-right mobilization data from the FARPE (Far-Right Protests in Europe) dataset.
+**FAR RIGHT RALLIES AND COUNTERPROTEST AS RESISTANCE: CLAIMING THE STREET**
 
-Overview
-The analysis explores six key hypotheses about far-right mobilizations across Europe, examining patterns in counter-mobilization, protest characteristics, geographic distribution, and temporal trends.
+# **FARPE Data Analysis**
 
-Dataset
-File: data/FARPE-data_1.3.csv
-Encoding: Latin-1
+Analysis of far-right mobilization patterns across Europe using the **FARPE (Far-Right Protests in Europe)** dataset.
 
-The dataset includes information on far-right protest events, including issues, locations, counter-mobilization, protest forms, and temporal data.
+---
 
-Dependencies
+## **Overview**
+
+This repository contains a Python-based analysis exploring **six key hypotheses** about far-right protest mobilization in Europe.
+The project investigates:
+
+* Counter-mobilization dynamics
+* Protest characteristics
+* Geographical concentration
+* Temporal shifts in issue salience
+* Relationships between protest forms, violence, and counter-protest
+
+---
+
+## **Dataset**
+
+* **File:** `data/FARPE-data_1.3.csv`
+* **Encoding:** `Latin-1`
+
+The dataset includes information on far-right protest events such as:
+
+* Issues and grievances
+* Location and country
+* Counter-mobilization characteristics
+* Protest form (march, rally, sit-in, violent action, etc.)
+* Event level (local, national, supranational)
+* Dates and temporal indicators
+
+**Citation:**
+Castelli Gattinara Pietro, Froio Caterina, & Pirro Andrea (2022).
+*Far-right protest mobilisation in Europe: Grievances, opportunities and resources.*
+**European Journal of Political Research, 61(4), 1019–1041.**
+[https://doi.org/10.1111/1475-6765.12484](https://doi.org/10.1111/1475-6765.12484)
+
+---
+
+## 🧩 **Dependencies**
+
+Required packages:
+
+```
 python
 pandas
 numpy
 matplotlib
 seaborn
+```
 
-Install dependencies using:
+Install via pip:
+
+```bash
 pip install pandas numpy matplotlib seaborn
+```
 
-Analysis Structure
-Data Preparation
-Loads the FARPE dataset
-Cleans string columns (counter-mobilization, issues, event level, protest form)
-Removes rows with missing key data
-Hypothesis 1: Counter-Mobilization by Issue
-Question: Which protest issues attract the most counter-mobilization?
+---
 
-Analyses counter-mobilization rates across different protest issues
-Filters for issues with at least 30 events
-Visualizes proportion of events with counter-mobilization by issue type
-Hypothesis 2: Verbal Counter-Mobilization by Event Level
-Question: Does the type of counter-mobilization vary by event scale?
+## **Analysis Structure**
 
-Categorizes events into Local, National, and Supranational levels
-Examines the proportion of verbal counter-mobilization at each level
-Presents results in a pie chart visualization
-Hypothesis 3: Violence and Counter-Mobilization Type
-Question: Is protest violence related to counter-mobilization presence?
+### **1. Data Preparation**
 
-Identifies violent protest forms using keyword detection
-Compares violence rates between contentious counter-mobilization and no counter-mobilization
-Uses bar plot to show the relationship
-Hypothesis 4: Identity-Related Issues Over Time
-Question: Have Islam/Immigration/Identity issues become more prominent since 2014?
+* Loads the FARPE dataset
+* Cleans key string columns:
 
-Tracks mentions of Islam, Immigration, and Identity issues
-Compares periods before and after 2014
-Displays temporal shift using a stacked bar chart
-Hypothesis 5: Geographic Distribution
-Question: Which countries have the most far-right mobilizations?
+  * Counter-mobilization
+  * Issues
+  * Event level
+  * Protest form
+* Removes rows with missing essential variables
 
-Counts events by country
-Identifies top 10 countries with most mobilizations
-Calculates concentration (top 5 countries' share)
-Hypothesis 6: Welfare/Economic Issues Temporal Trend
-Question: How has focus on welfare/economic issues changed over time?
+---
 
-Tracks welfare and economic-related issues by year
-Highlights the 2012-2014 crisis period
-Identifies peak year for welfare-related mobilizations
-Running the Analysis
-Ensure the dataset is located at data/FARPE-data_1.3.csv
+### **2. Hypothesis 1 — Counter-Mobilization by Issue**
 
-Run the script:
-   python analysis_script.py
+**Question:** *Which protest issues attract the most counter-mobilization?*
 
-The script will generate multiple visualizations and print statistical summaries
-Output
+* Computes counter-mobilization rates by issue
+* Filters out issue categories with fewer than 30 events
+* Produces a bar plot showing counter-mobilization proportions
+
+---
+
+### **3. Hypothesis 2 — Verbal Counter-Mobilization by Event Level**
+
+**Question:** *Does counter-mobilization type vary by event scale?*
+
+* Categorizes events into:
+  **Local**, **National**, **Supranational**
+* Examines rates of *verbal* counter-mobilization
+* Displays results using a pie chart
+
+---
+
+### **4. Hypothesis 3 — Violence and Counter-Mobilization**
+
+**Question:** *Is protest violence associated with counter-mobilization patterns?*
+
+* Detects violent events using keyword matching in protest forms
+* Compares violence rates between:
+
+  * Contentious counter-mobilization
+  * No counter-mobilization
+* Visualizes results with a bar plot
+
+---
+
+### **5. Hypothesis 4 — Identity-Related Issues Over Time**
+
+**Question:** *Have Islam/Immigration/Identity issues increased since 2014?*
+
+* Tracks issue salience over time
+* Compares pre-2014 vs. post-2014 periods
+* Uses a stacked bar chart to show temporal shifts
+
+---
+
+### **6. Hypothesis 5 — Geographic Distribution**
+
+**Question:** *Which countries have the most far-right mobilizations?*
+
+* Counts events by country
+* Identifies the **top 10 countries**
+* Calculates concentration share of the top 5
+  (e.g., percentage of all protests occurring in these countries)
+
+---
+
+### **7. Hypothesis 6 — Welfare/Economic Issues Over Time**
+
+**Question:** *How has the emphasis on welfare/economic issues evolved?*
+
+* Tracks welfare/economic issue mentions by year
+* Highlights the **2012–2014 crisis period**
+* Identifies peak mobilization year for welfare-related protests
+
+---
+
+## **Running the Analysis**
+
+1. Ensure the dataset is located at:
+   `data/FARPE-data_1.3.csv`
+2. Run the script:
+
+```bash
+python analysis_script.py
+```
+
+The script will automatically generate:
+
+* Statistical summaries (printed to console)
+* Visualizations (bar charts, pie chart, stacked bars, line trends)
+
+---
+
+## **Output**
+
 The analysis produces:
 
-Statistical tables 
-Multiple visualizations (bar plots, pie chart, line plot, stacked bar chart)
-Key findings for each hypothesis
+* Statistical tables
+* Multiple visualizations
+* Key findings for each hypothesis
+* Highlights on temporal, spatial, and issue-based trends
 
-Notes
-The script uses a minimum threshold of 30 events for certain analyses to ensure statistical reliability
-Event levels are normalized into simplified categories for clearer analysis
-Violence detection uses keyword matching on protest form descriptions
-All visualizations use seaborn's whitegrid style for consistency
+---
 
-Citation
-Castelli Gattinara Pietro, Froio Caterina, et Pirro Andrea. (2022) Far‐right protest mobilisation in Europe: Grievances, opportunities and resources. European Journal of Political Research, 61(4), 1019-1041. https://doi.org/10.1111/1475-6765.12484.
+## **Notes**
+
+* A minimum threshold of **30 events** is used for reliable issue-level comparisons
+* Event level categories are normalized for consistency
+* Violence detection is based on keyword matching
+* All visualizations use **seaborn’s `whitegrid` style**
+
