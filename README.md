@@ -68,7 +68,7 @@ pip install pandas numpy matplotlib seaborn
 
 ### **2. Hypothesis 1 — Counter-Mobilization by Issue**
 
-**Question:** *Which protest issues attract the most counter-mobilization?*
+**Question:** *Certain protest issues are more likely to trigger counter-mobilization?*
 
 * Computes counter-mobilization rates by issue
 * Filters out issue categories with fewer than 30 events
@@ -77,7 +77,7 @@ pip install pandas numpy matplotlib seaborn
 
 ### **3. Hypothesis 2 — Verbal Counter-Mobilization by Event Level**
 
-**Question:** *Does counter-mobilization type vary by event scale?*
+**Question:** *National and supranational far-right mobilizations are more likely to feature verbal counter-mobilization than local events?*
 
 * Categorizes events into:
   **Local**, **National**, **Supranational**
@@ -86,7 +86,7 @@ pip install pandas numpy matplotlib seaborn
 
 ### **4. Hypothesis 3 — Violence and Counter-Mobilization**
 
-**Question:** *Is protest violence associated with counter-mobilization patterns?*
+**Question:** *Protest forms involving physical violence are more likely when counter-mobilization is “Contentious” compared to “No counter-mobilization"?*
 
 * Detects violent events using keyword matching in protest forms
 * Compares violence rates between:
@@ -97,7 +97,7 @@ pip install pandas numpy matplotlib seaborn
 
 ### **5. Hypothesis 4 — Identity-Related Issues Over Time**
 
-**Question:** *Have Islam/Immigration/Identity issues increased since 2014?*
+**Question:** *Issues related to Islam, immigration, and identity have become pillars of far-right discourse, especially since 2014?*
 
 * Tracks issue salience over time
 * Compares pre-2014 vs. post-2014 periods
@@ -105,7 +105,7 @@ pip install pandas numpy matplotlib seaborn
 
 ### **6. Hypothesis 5 — Geographic Distribution**
 
-**Question:** *Which countries have the most far-right mobilizations?*
+**Question:** *Geographical density: the majority of the far-right protests are concentrated in fewer countries?*
 
 * Counts events by country
 * Identifies the **top 10 countries**
