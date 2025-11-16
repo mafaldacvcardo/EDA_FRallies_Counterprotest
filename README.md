@@ -66,16 +66,7 @@ pip install pandas numpy matplotlib seaborn
 * Removes rows with missing essential variables
 
 
-### **2. Hypothesis 1 — Counter-Mobilization by Issue**
-
-**Question:** *Certain protest issues are more likely to trigger counter-mobilization?*
-
-* Computes counter-mobilization rates by issue
-* Filters out issue categories with fewer than 30 events
-* Produces a bar plot showing counter-mobilization proportions
-
-
-### **3. Hypothesis 2 — Verbal Counter-Mobilization by Event Level**
+### **2. Hypothesis 1 — Verbal/Symbolic Counter-Mobilization by Event Level**
 
 **Question:** *National and supranational far-right mobilizations are more likely to feature verbal counter-mobilization than local events?*
 
@@ -84,18 +75,7 @@ pip install pandas numpy matplotlib seaborn
 * Examines rates of *verbal* counter-mobilization
 * Displays results using a pie chart
 
-### **4. Hypothesis 3 — Violence and Counter-Mobilization**
-
-**Question:** *Protest forms involving physical violence are more likely when counter-mobilization is “Contentious” compared to “No counter-mobilization"?*
-
-* Detects violent events using keyword matching in protest forms
-* Compares violence rates between:
-
-  * Contentious counter-mobilization
-  * No counter-mobilization
-* Visualizes results with a bar plot
-
-### **5. Hypothesis 4 — Identity-Related Issues Over Time**
+### **3. Hypothesis 2 — Identity-Related Issues Over Time**
 
 **Question:** *Issues related to Islam, immigration, and identity have become pillars of far-right discourse, especially since 2014?*
 
@@ -103,7 +83,7 @@ pip install pandas numpy matplotlib seaborn
 * Compares pre-2014 vs. post-2014 periods
 * Uses a stacked bar chart to show temporal shifts
 
-### **6. Hypothesis 5 — Geographic Distribution**
+### **4. Hypothesis 3 — Geographic Distribution**
 
 **Question:** *Geographical density: the majority of the far-right protests are concentrated in fewer countries?*
 
@@ -112,7 +92,7 @@ pip install pandas numpy matplotlib seaborn
 * Calculates concentration share of the top 5
   (e.g., percentage of all protests occurring in these countries)
 
-### **7. Hypothesis 6 — Welfare/Economic Issues Over Time**
+### **5. Hypothesis 4 — Welfare/Economic Issues Over Time**
 
 **Question:** *How has the emphasis on welfare/economic issues evolved?*
 
@@ -130,7 +110,7 @@ pip install pandas numpy matplotlib seaborn
 python analysis_script.py
 ```
 
-The script will automatically generate:
+The script automatically generates:
 
 * Statistical summaries (printed to console)
 * Visualizations (bar charts, pie chart, stacked bars, line trends)
